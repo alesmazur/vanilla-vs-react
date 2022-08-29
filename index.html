@@ -16,19 +16,17 @@
 
     <!-- Creating of REACT element -->
     <script>
-      const helloWorldHeading = React.createElement(
-        "h1",
-        null,
-        "Hello from React"
-      );
+      const reactHeading = React.createElement("h1", null, "Hello from React");
+      console.log(reactHeading);
       const container = document.getElementById("react-app");
       const root = ReactDOM.createRoot(container);
-      root.render(helloWorldHeading);
+      root.render(reactHeading);
     </script>
     <script>
-      const heading = document.createElement("h1");
-      heading.textContent = "Hello from Vanilla JS";
-      document.getElementById("vanilla-app").appendChild(heading);
+      const vanillaHeading = document.createElement("h1");
+      vanillaHeading.textContent = "Hello from Vanilla JS";
+      document.getElementById("vanilla-app").appendChild(vanillaHeading);
+      console.log(vanillaHeading);
     </script>
   </body>
 </html>
